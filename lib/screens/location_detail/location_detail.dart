@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'text_section.dart';
+import 'image_banner.dart';
 
 class LocationDetail extends StatelessWidget {
   const LocationDetail({Key? key}) : super(key: key);
@@ -9,12 +11,15 @@ class LocationDetail extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Location Detail'),
       ),
-      body: Column(children: [
-        _bannerContainer(Colors.red),
-        _textSectionContainer(Colors.green),
-        _textSectionContainer(Colors.blue),
-        _textSectionContainer(Colors.purple),
-      ]),
+      body: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: const [
+            ImageBanner("assets/images/kiyomizu-dera.jpg"),
+            TextSection(Colors.red),
+            TextSection(Colors.green),
+            TextSection(Colors.blue),
+          ]),
     );
   }
 }
