@@ -14,8 +14,8 @@ class LocationDetail extends StatelessWidget {
       body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.end,
-          children: const [
-            ImageBanner("assets/images/kiyomizu-dera.jpg"),
+          children: [
+            const ImageBanner("assets/images/kiyomizu-dera.jpg"),
             TextSection(Colors.red),
             TextSection(Colors.green),
             TextSection(Colors.blue),
